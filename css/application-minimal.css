@@ -4,23 +4,38 @@
  * copyright @colossal 2015
  */
 
+#sponsors {
+  text-align: center;
+  padding: 35px 40px 45px;
+}
+#sponsors .inner {
+  max-width: 700px;
+  margin: 0px auto;
+}
+#sponsors a {
+  margin: 20px 15px 0;
+  position: relative;
+}
+#sponsors a,
+#sponsors img {
+  height: 20px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+#sponsors img {
+  transition: all 0.3s ease;
+  filter: contrast(0%);
+}
+#sponsors img:hover {
+  filter: none;
+}
+
+ul.navbar-nav li {
+  text-align: center !important;
+}
+
 .sp-amf {
   margin-bottom: 0 !important;
-}
-
-.sp-img {
-  margin: 0 35px 30px 35px;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-.sp-img:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 
 .k {
