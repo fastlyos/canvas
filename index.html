@@ -470,7 +470,7 @@
                         var downloads_total = res.package.downloads.total.total;
                         $('#repo_downloads_count').html(format_quantity(downloads_total));
                     });
-                    $.get('https://api.github.com/repos/austintoddj/canvas', function (res) {
+                    $.get('https://api.github.com/repos/cnvs/canvas', function (res) {
                         $('#repo_open_issues').html(format_quantity(res.open_issues));
                         $('#repo_stars').html(format_quantity(res.stargazers_count));
                         $('#repo_forks').html(format_quantity(res.forks_count));
