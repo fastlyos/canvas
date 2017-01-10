@@ -149,8 +149,8 @@
                     </div>
                     <div class="gj">
                         <div class="ars">
-                            <h1 class="aqg apd" id="repo_open_issues"></h1>
-                            <span class="aqh">Open Issues</span>
+                            <h1 class="aqg apd" id="repo_contributors"></h1>
+                            <span class="aqh">Contributors</span>
                         </div>
                     </div>
                 </div>
@@ -480,8 +480,10 @@
                         var downloads_total = res.package.downloads.total.total;
                         $('#repo_downloads_count').html(format_quantity(downloads_total));
                     });
+                    $.get('https://api.github.com/repos/cnvs/canvas/contributors', function (num) {
+                        $('#repo_contributors').html(num.length);
+                    });
                     $.get('https://api.github.com/repos/cnvs/canvas', function (res) {
-                        $('#repo_open_issues').html(format_quantity(res.open_issues));
                         $('#repo_stars').html(format_quantity(res.stargazers_count));
                         $('#repo_forks').html(format_quantity(res.forks_count));
                     });
